@@ -1,0 +1,15 @@
+.light {
+
+}
+
+.light #light-dark-button {
+    background-color: blue;
+}
+
+.dark {
+
+}
+
+.dark #light-dark-button {
+    background-color: red;
+}

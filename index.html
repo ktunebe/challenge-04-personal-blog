@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>My First Blog Home</title>
 </head>
-<body>
+<body class="light">
     <header>
-        <button>😎🌚</button>
+        <button id="light-dark-button">😎🌚🌝🌞</button>
     </header>
     <main>
         <div id="heading">
@@ -18,11 +18,26 @@
         </div>
         <div id="entry">
             <h2>What's on your mind?</h2>
-            <form id="blog-form">
-
+            <form method="POST" id="blog-form">
+                <div class="input-group">
+                    <label for="user-name">Username</label>
+                    <input type="text" name="user-name" class="input-box" id="user-name" placeholder="" />
+                  </div>
+                  <div class="input-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" class="input-box" id="title" placeholder="" />
+                  </div>
+                  <div class="input-group">
+                    <label for="content">Content</label>
+                    <textarea type="text" name="content" class="input-box" id="content" placeholder=""></textarea>
+                  </div>
+                  <div id="button-holder">
+                    <button id="submit-button">Submit</button>
+                  </div>
             </form>
         </div>
     </main>
     <script src="assets/js/form.js"></script>
+    <script src="assets/js/logic.js"></script>
 </body>
 </html>
