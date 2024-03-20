@@ -30,6 +30,3 @@ submitButton.addEventListener('click', function (event) {
         redirect();
     }
 });
-
-// Initialize on startup
-// init();

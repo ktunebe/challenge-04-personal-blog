@@ -1,6 +1,62 @@
-main {
-    border: 2px solid black;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+h1 {
+    font-size: 4rem;
+    flex: 1 1 80%;
+    text-align: left;
+}
+
+.button-container {
+    flex: 1 1 20%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#back-button {
+    font-size: 2.5rem;
+    padding: .25rem 2rem;
+    background-color: #ffcb4c;
+    border-radius: 2rem;
+    border-color: purple;
+}
+
+#back-button:hover {
+    transition: all 250ms ease-in-out;
+    padding: .25rem 3rem;
+}
+
+#back-button a {
+    text-decoration: none;
+}
+
 .post-container {
-    border: 2px solid black;
+    border: 2px solid var(--light-text);
+    margin: 1rem .25rem;
+}
+
+.dark .post-container {
+    border-color: var(--dark-accent);
+}
+
+.post-container h2 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--light-accent);
+    margin: .5rem 1rem;
+}
+.post-container p {
+    font-size: 2rem;
+    font-style: italic;
+    margin: 1rem 2rem 8rem 2rem;
+    text-indent: 2rem;
+    text-wrap: wrap;
+}
+.post-container span {
+    font-size: 1.8rem;
+    margin: 1rem;
+    line-height: 2.5rem;
 }

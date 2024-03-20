@@ -1,4 +1,4 @@
-const main = document.querySelector('#container');
+const main = document.querySelector('#blog-container');
 const postDiv = document.createElement('div');
 postDiv.className = 'post-container';
 const postTitle = document.createElement('h2');
