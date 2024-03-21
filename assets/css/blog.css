@@ -1,3 +1,4 @@
+/* Flex the header because it has added elements compared to the main page */
 header {
     display: flex;
     justify-content: space-between;
@@ -10,39 +11,34 @@ h1 {
     text-align: left;
 }
 
+/* Style the back and light/dark buttons and flex them so they stay together */
 .button-container {
     flex: 1 1 20%;
     display: flex;
     align-items: center;
     justify-content: right;
 }
-
 #back-button {
     font-size: 2.5rem;
     padding: .25rem 2rem;
     background-color: #ffcb4c;
     border-radius: 2rem;
     border-color: purple;
+    text-decoration: none;
 }
-
 #back-button:hover {
     transition: all 250ms ease-in-out;
     padding: .25rem 3rem;
 }
 
-#back-button a {
-    text-decoration: none;
-}
-
+/* Style the posts once they are appended */
 .post-container {
     border: 2px solid var(--light-text);
     margin: 1rem .25rem;
 }
-
 .dark .post-container {
     border-color: var(--dark-accent);
 }
-
 .post-container h2 {
     font-size: 2.5rem;
     border-bottom: 2px solid var(--light-accent);

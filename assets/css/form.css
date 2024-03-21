@@ -3,12 +3,14 @@ header {
     line-height: 11rem;
 }
 
+/* Flex the main's 2 sections */
 main {
     display: flex;
     flex-flow: row wrap;
     min-height: 50svh;
 }
 
+/* Flex the sections to be in a column on small screens */
 #blog-title {
     flex: 1 1 100%;
     display: flex;
@@ -18,14 +20,13 @@ main {
     margin: .5rem .5rem .5rem 0;
     background-color: var(--dark-accent);
 }
-
 h1 {
     text-align: center;
     font-size: 4rem;
     padding: 10rem;
     border-radius: 50%;
 }
-
+/* Flex the form container to keep the form and heading centered */
 #blog-entry {
     flex: 1 1 100%;
     display: flex;
@@ -38,28 +39,24 @@ h1 {
     padding: 2rem;
 }
 
+/* Style the form area */
 #blog-entry h2 {
     font-size: 2.5rem;
     padding: 2rem;
 }
-
 #blog-entry form {
     text-align: left;
     width: 75%;
 }
-
 .input-group {
     width: 100%;
 }
-
 .input-group label {
     font-size: 1.8rem;
 }
-
 .input-group textarea {
     height: 8rem;
 }
-
 .input-box {
     display: block;
     margin: 1rem 0;
@@ -67,7 +64,6 @@ h1 {
     font-size: 1.8rem;
     padding: .5rem;
 }
-
 #submit-button {
     width: 100%;
     font-size: 1.8rem;
@@ -75,12 +71,12 @@ h1 {
     background-color: var(--dark-bc);
     color: var(--dark-text);
 }
-
 .dark #submit-button {
     background-color: var(--light-accent);
     color: var(--light-text);
 }
 
+/* Make the sections appear side by side on larger screens */
 @media (min-width: 768px) {
     #blog-title {
         flex: 1 1 40%;

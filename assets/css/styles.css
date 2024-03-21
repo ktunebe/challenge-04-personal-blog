@@ -1,3 +1,4 @@
+/* Main color scheme. Redundant right now, but this way can be changed if you want a completely different scheme for light and dark */
 :root {
     --light-bc: #EEEEEE;
     --light-text: #31363F;
@@ -10,78 +11,80 @@
 html {
     font-size: 45%;
 }
-
+/* Light and dark universal colors */
 .light {
     background-color: var(--light-bc);
     color: var(--light-text);
+}
+.dark {
+    background-color: var(--dark-bc);
+    color: var(--dark-text);
 }
 
 main {
     min-height: 50svh;
 }
 
-.dark {
-    background-color: var(--dark-bc);
-    color: var(--dark-text);
-}
-
+/* Keep header at top of page so that buttons can always be accessed */
 header {
+    position: sticky;
+    top: 0;
+    width: 100%;
     height: 10rem;
     border-bottom: 1rem solid var(--dark-accent);
+    background-color: var(--light-bc);
 }
-
+.dark header {
+    background-color: var(--dark-bc);
+}
+/* Style the moon/sun button */
 #light-dark-button {
     background: transparent;
     border: none;
     font-size: 4rem;
     margin: 1rem 2rem;
 }
-
 #light-dark-button:hover{
     transition: all 250ms ease-in-out;
     font-size: 5rem;
     cursor: pointer;
 }
 
+/* Keep footer at bottom of page when present and style contents*/
 footer {
-    position: absolute;
+    position: sticky;
+    background-color: var(--light-bc);
     bottom: 0;
     width: 100%;
     height: 10rem;
     border-top: 1rem solid var(--dark-accent);
     border-bottom: 1rem solid var(--dark-accent);
 }
-
+.dark footer {
+    background-color: var(--dark-bc);
+}
 footer h2 {
     margin-top: .3rem;
     font-size: 2rem;
     text-align: center;
 }
-
 footer ul {
     font-size: 1.5rem;
     margin-left: 1rem;
     line-height: 1.8rem;
 }
-
 .footer-li-name {
     font-weight: bold;
     font-style: italic;
 }
+footer a, footer a:visited {
+    color: var(--dark-accent)
+}
 
+/* Make all text larger on larger screens */
 @media (min-width: 768px) {
     html {
         font-size: 62.5%;
-    }
-
-    #blog-title {
-        flex: 1 1 40%;
-        max-width: 50%;
-    }
-    
-    #blog-entry {
-        flex: 1 1 40%;
-        max-width: 50%;
     }
 }
 
